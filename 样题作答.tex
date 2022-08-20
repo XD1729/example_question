@@ -1,0 +1,174 @@
+\documentclass[UTF8]{ctexart}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mhchem}
+\usepackage{stmaryrd}
+
+
+\title{Nonequilibrium Processes in Physics, Chemistry and Biology }
+
+
+\author{Sample Questions Part I}
+\date{}
+
+
+\begin{document}
+\maketitle
+
+
+\section{i) Fokker-Plank equation. }
+
+ a) What is the Fokker-Planck equation? 
+ 
+book p39. 
+F: conditional prob density.
+W:transition rate.
+$F=W\Delta t$
+ 
+ $$
+\frac{\partial f(p, t)}{\partial t}=\int d k\left[\frac{\partial}{\partial p_{\alpha}}[F(p, k) f(p, t)] k_{\alpha}+\frac{1}{2} \frac{\partial^{2}}{\partial p_{\alpha} \partial p_{\beta}}[F(p, k) f(p, t)] k_{\alpha} k_{\beta}\right]
+$$
+Introducing notations,
+$$
+\bar{A}_{\alpha}(p)=\int d k F(p, k) k_{\alpha}, \quad B_{\alpha \beta}(p)=\int d k F(p, k) k_{\alpha} k_{\beta},
+$$
+we write this equation on the form,
+$$
+\frac{\partial f(p, t)}{\partial t}=\frac{\partial}{\partial p_{\alpha}}\left[\bar{A}_{\alpha}(p) f(p, t)\right]+\frac{1}{2} \frac{\partial^{2}}{\partial p_{\alpha} \partial p_{\beta}}\left[B_{\alpha \beta}(p) f(p, t)\right]
+$$
+ 
+ Another way to express the FP:
+ 
+ $$\frac{\partial f(x, t)}{\partial t} =  \frac{d}{dx}[-a_{1}(x) +\frac{1}{2}\frac{\partial}{\partial x }a_{2}]f(x,t)$$
+ 
+ 
+ b) Explain the relation between the FPE and the master equation; derive the FPE from the master equation. 
+ 
+  book p38. eq
+ 
+ c) Explain the relation between the FPE and Brownian motion. 
+ 
+ book p38. eq8.12-
+ 
+ 
+ 
+ d) What constraint on the FPE coefficients is imposed by an equilibrium environment?
+ 
+ eq8.24
+
+
+\section{ii) Ch4 Markov process and master equation.}
+
+a) Give the definition and discuss the properties of the Markov stochastic process.
+
+book p16 eq4.8. 
+In physics we often deal with some simpler stochastic processes that are called Markov processes. Markov process is defined by relation,
+$$
+F\left(x_{1}, t_{1} ; \ldots x_{n-1}, t_{n-1} \mid x_{n}, t_{n}\right)=F\left(x_{n-1}, t_{n-1} \mid x_{n}, t_{n}\right),
+$$
+
+
+
+b) Derive a master equation for Markov processes.
+
+book p17.
+eq4.10-eq4.15
+
+c) Apply the master equation to scattering by impurities and derive the collision integral.
+
+p18 eq4.19
+
+d) What is the H-theorem?
+
+Prove the H-theorem for this collision integral. 
+
+eq4.19
+
+Discuss local equilibrium distribution function. 
+
+eq4.26
+
+Explain the relaxation time approximation.
+
+p17
+
+\section{iii) Boltzmann equation.}
+
+a) Give a phenomenological derivation of the Boltzmann equation as a combination of the Liouville equation and the master equation.
+
+p22 eq5.8
+
+b) Derive the particle-particle collision integral from a general master equation.
+
+p24 eq5.11
+
+c) Prove the H-theorem for this collision integral. Derive the equilibrium distribution function. What is the relaxation time approximation?
+
+\section{iv) Boltzmann transport theory.}
+
+a) Explain the principles of Boltzmann transport theory.
+
+b) Calculate the ac conductivity for a gas of charged particles; give physical interpretations of the real and imaginary parts of the conductivity in the frequency domain.
+ p.30
+
+\section{v) Langevin equation.}
+
+Consider Brownian motion of a strongly damped particle.
+
+a) Assume a white environmental noise and evaluate the time correlation function $\left\langle v(t) v\left(t^{\prime}\right)\right\rangle$.
+
+b) Assume a colored environmental noise,
+$$
+\left\langle\xi(t) \xi\left(t^{\prime}\right)\right\rangle=\text { const } \cdot e^{-\left|t-t^{\prime}\right| / \tau},
+$$
+and evaluate the velocity dispersion $\left\langle v(t)^{2}\right\rangle$. vi) Magneto-resistance.
+
+Calculate magneto-resistance of a dilute gas of charged particles. Use the Boltzmann equation and the relaxation time approximation.
+
+\section{vii) Thermoelectric coefficient.}
+
+Calculate the thermoelectric coefficient of a dilute gas of charged particles.
+
+Use the Boltzmann equation and the relaxation time approximation.
+
+\section{viii) Diffusion.}
+
+Discuss diffusion using various approaches.
+
+a) Derive a diffusion equation using random walk arguments.
+
+b) Derive a diffusion equation from the Boltzmann equation.
+
+c) Discuss the relation between diffusion and Brownian motion.
+
+\section{ix) AC conductivity.}
+
+a) Calculate the ac-conductivity of an ideal gas of charged particles (i.e. linear current response to applied time- dependent electric field) using Boltzmann equation. The relaxation time approximation can be assumed.
+
+b) When is the conductivity purely real? When is it purely imaginary? Give physical interpretations for these cases.
+
+c) Use the derived ac conductivity to evaluate a voltage noise spectral function.
+
+\section{x) Current fluctuations in electrical circuits.}
+
+a) Apply the Langevin approach to calculate the mean square deviation of the current.
+
+b) What is Nyquist-Jonson noise? Calculate the noise spectral density.
+
+xi) Consider a dilute classical gas of ions with charge $q$. Assume that the gas has constant density and vanishing flow velocity. A constant temperature gradient is maintained across the gas. Calculate the electric current density $j$ that appears as a response to the temperature gradient, $j=-\epsilon \nabla T$, assuming the relaxation time approximation.
+
+\section{xii) Classical particle embedded in an environment of linear oscillators.}
+
+a) Explain the physics of Brownian motion, and formulate the model for the environment.
+
+b) Discuss coupling of the particle to the environment.
+
+c) Sketch a derivation of the Langevin equation and discuss connection between damping and fluctuations.
+
+d) Discuss Markovian approximation to the derived Langevin equation.
+
+
+\end{document}
